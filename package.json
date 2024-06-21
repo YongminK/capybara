@@ -2,7 +2,7 @@
   "name": "capybara",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yongmink.github.io/capybara",
+  "homepage": "https://yongmink.github.io/capybara/",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
