@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/capybara/static/css/main.31d6cfe0.css",
-    "main.js": "/capybara/static/js/main.ead6d35b.js",
+    "main.js": "/capybara/static/js/main.da21214d.js",
     "static/js/453.cebd7ac4.chunk.js": "/capybara/static/js/453.cebd7ac4.chunk.js",
     "index.html": "/capybara/index.html",
-    "main.ead6d35b.js.map": "/capybara/static/js/main.ead6d35b.js.map",
+    "main.da21214d.js.map": "/capybara/static/js/main.da21214d.js.map",
     "453.cebd7ac4.chunk.js.map": "/capybara/static/js/453.cebd7ac4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.ead6d35b.js"
+    "static/js/main.da21214d.js"
   ]
 }
