@@ -13,7 +13,7 @@ eslint-disable react/no-unknown-property
 
 const Baby = (props) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/baby_1_lvl_1.gltf');
+  const { nodes, materials, animations } = useGLTF(process.env.PUBLIC_URL+'/baby_1_lvl_1.gltf');
   const { actions, names } = useAnimations(animations, group);
 
   // eslint-disable-next-line consistent-return

@@ -13,7 +13,7 @@ import startAnimation from '../helpers/startAnimation';
 
 const AStudentModel = (props) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/a_student_2_lvl_10_emb.gltf');
+  const { nodes, materials, animations } = useGLTF(process.env.PUBLIC_URL+'/a_student_2_lvl_10_emb.gltf');
   const { actions, names } = useAnimations(animations, group);
 
   // eslint-disable-next-line consistent-return
@@ -34,7 +34,7 @@ const AStudentModel = (props) => {
             skeleton={nodes.MESH_a_student_2_lvl_10.skeleton}
           />
         </group>
-        <mesh position={[0, 0, 1]} name='MESH_board' geometry={nodes.MESH_board.geometry} material={materials.Texture_a_student_2_lvl_10} />
+        <mesh position={[2, 0, 0]} name='MESH_board' geometry={nodes.MESH_board.geometry} material={materials.Texture_a_student_2_lvl_10} />
       </group>
     </group>
   );

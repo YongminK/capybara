@@ -13,7 +13,7 @@ eslint-disable react/no-unknown-property
 
 const Explorer = (props) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/explorer_2_lvl_6.gltf');
+  const { nodes, materials, animations } = useGLTF(process.env.PUBLIC_URL+'/explorer_2_lvl_6.gltf');
   const { actions, names } = useAnimations(animations, group);
 
   // eslint-disable-next-line consistent-return

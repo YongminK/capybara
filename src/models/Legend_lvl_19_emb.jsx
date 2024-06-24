@@ -13,7 +13,7 @@ import startAnimation from '../helpers/startAnimation';
 
 const LegendLvl19 = (props) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/legend_lvl_19_emb.gltf');
+  const { nodes, materials, animations } = useGLTF(process.env.PUBLIC_URL+'/legend_lvl_19_emb.gltf');
   const { actions, names } = useAnimations(animations, group);
 
   // eslint-disable-next-line consistent-return

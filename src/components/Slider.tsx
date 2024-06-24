@@ -1,10 +1,9 @@
-import {ChangeEvent, useEffect, useState} from "react";
+import {useState} from "react";
 import Scene from "./Scene";
 import {CapybaraType} from "../types";
-import {Box, Button, IconButton} from "@mui/material";
+import {Box, IconButton} from "@mui/material";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import * as THREE from 'three';
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -38,8 +37,22 @@ const Slider = () => {
   return (
      <Box
      component={'div'}
-      sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', height: '90vh', width: '98vw'}}>
-       <Scene capybaraType={slides[currentSlide]} />
+      sx={(theme) => ({display: 'flex', flexDirection: 'column', alignItems: 'center',
+        [theme.breakpoints.down('sm')]: {
+          height: '50vh',
+        }
+      })}>
+       <Box  component={'div'}
+             sx={(theme) => ({
+               width: '95vw',
+               height: '80vh',
+               [theme.breakpoints.down('sm')]: {
+                 height: '50vh',
+               }
+             })}
+       >
+         <Scene capybaraType={slides[currentSlide]} />
+       </Box>
         <div>
           <IconButton onClick={onPrev} >
             <ArrowBackIcon />

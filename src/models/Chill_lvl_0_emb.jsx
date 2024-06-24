@@ -13,7 +13,7 @@ import startAnimation from '../helpers/startAnimation';
 
 const ChillModel = (props) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/chill_lvl_0_emb.gltf');
+  const { nodes, materials, animations } = useGLTF(process.env.PUBLIC_URL+'/chill_lvl_0_emb.gltf');
   const { actions, names } = useAnimations(animations, group);
 
   // eslint-disable-next-line consistent-return
