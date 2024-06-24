@@ -46,6 +46,9 @@ const Slider = () => {
              sx={(theme) => ({
                width: '95vw',
                height: '80vh',
+               alignItems: 'center',
+               justifyContent: 'center',
+               display: 'flex',
                [theme.breakpoints.down('sm')]: {
                  height: '50vh',
                }
